@@ -1,0 +1,13 @@
+Host bastion
+     Hostname ip_address_of_bastion
+     IdentityFile ~/.ssh/id_rsa
+     User user_name
+     
+Host server_target
+     ProxyJump bastion
+     Hostname ip_address_of_server_target
+     IdentityFile ~/.ssh/id_rsa
+     User user_name
+     
+     # Fichier à mettre sur le serveur de rebond (bastion) dans  /home/user/.ssh/config.
+     # faire un $: ssh server_target pour se connecter sur le serveur cible.
