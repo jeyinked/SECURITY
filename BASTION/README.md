@@ -61,4 +61,4 @@ Dans la partie du bas on déclare le serveur cible (le nom "server_target", la c
   
   La configuration sshd_config autorisera aucun serveur à se connecter en ssh ou mot de passe sauf le serveur BASTION.
 
-__7)__ Sur le serveur host faire un ssh -J ip_bastion ip_target
+__7)__ Sur le serveur host faire un ___ssh -J ip_bastion ip_target___
