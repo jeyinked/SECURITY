@@ -60,3 +60,5 @@ Dans la partie du bas on déclare le serveur cible (le nom "server_target", la c
    * On redemmare par la suite le service ssh avec la commande __/etc/init.d/ssh restart__ ou __systemctl restart sshd__, afin de permettre de prendre en compte les modifications.
   
   La configuration sshd_config autorisera aucun serveur à se connecter en ssh ou mot de passe sauf le serveur BASTION.
+
+__7)__ Sur le serveur host faire un ssh -J ip_bastion ip_target
