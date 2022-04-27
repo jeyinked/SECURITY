@@ -1,6 +1,6 @@
 
 
-# INSTALLATION SERVEUR NTP  
+# INSTALLATION SERVEUR NTP AVEC CHRONY
 ___apt-get upate && apt-get upgrade___  
 ___apt get install chrony___
 
