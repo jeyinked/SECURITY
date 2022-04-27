@@ -21,5 +21,6 @@ Faire un __ufw allow OpenSSH__ puis un __ufw allow 123/udp__ (le port par defaul
 #  CONFIGURATION SUR LE SERVEUR CLIENT  
 Dans __/etc/systemd/timesyncd.conf__, à la ligne:  
 __[TIME]__
-__NTP= mettre_ip_du_serveur_ntp__
-
+__NTP= mettre_ip_du_serveur_ntp__  
+Faire un __systemctl restart systemd-timesyncd__ puis un __systemctl status systemd-timesyncd__ pour vérifier que le serveur host est bien synchro sur le serveur ntp.
+On peut également faire un __date__ sur les 2 serveurs pour compararer.
