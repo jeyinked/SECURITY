@@ -16,4 +16,4 @@ Redemarrer le service avec __systemctl restart chrony__
 # OUVERTURE DE PORT SUR LE SERVEUR NTP AVEC UFW  
 Faire un ___apt-get install ufw.___  
 Autoriser la connexion SSH avant toutes choses au risque de perdre la connexion ssh.  
-Faire un __ufw allow OpenSSH__ puis un __ufw allow 123/udp___ (le port par default est 123).
+Faire un __ufw allow OpenSSH__ puis un __ufw allow 123/udp__ (le port par default est 123).
