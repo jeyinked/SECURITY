@@ -1,4 +1,4 @@
 # INSTALLATION ANNUAIRE LDAP AVEC OPENLDAP  
 
-apt-get install slapd ldap-utils.  
+__apt-get install slapd ldap-utils__.  
 Finir l'installation en rentrant un mot de passe pour l'administrateur de l'annuaire.
