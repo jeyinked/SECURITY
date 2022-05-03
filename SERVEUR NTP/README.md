@@ -27,3 +27,9 @@ On peut également faire un __date__ sur les 2 serveurs pour compararer.
 
 
 # COMMANDES UTILES
+
+timedatectl                       #Affiche les informations sur l'heure du système  
+
+timedatectl list-timezones        #Affiche les fuseaux horaires  
+
+timedatectl list-timezones | grep Paris
