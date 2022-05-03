@@ -26,4 +26,4 @@ Faire un __systemctl restart systemd-timesyncd__ puis un __systemctl status syst
 On peut également faire un __date__ sur les 2 serveurs pour compararer.
 
 
-# COMMANDES UTILS  
+# COMMANDES UTILES
