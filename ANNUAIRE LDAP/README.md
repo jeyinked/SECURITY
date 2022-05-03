@@ -16,5 +16,5 @@ Indiquer __non__  pour savoir si la base doit être supprimée quand slapd est p
 Indiquer __oui__ pour déplcer l'ancienne base de donnée.  
 
 
-# VERIFIER LE DIT  
+# VERIFIER LE DIT (Directory Information Tree)
 Avec la commande __ldapsearch -Q -L -Y EXTERNAL -H ldapi:/// -b dc=mon-entreprise,dc=com__
