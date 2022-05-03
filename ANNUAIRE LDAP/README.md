@@ -1,3 +1,7 @@
+# OPENLDAP  
+OpenLDAP est un annuaire informatique qui fonctionne sur le modèle client/serveur. Il contient des informations de n'importe quelle nature qui sont rangées de manière hiérarchique. Pour bien comprendre le concept, il est souvent comparé aux pages jaunes, où le lecteur recherche un numéro de téléphone particulier : il va d'abord sélectionner la profession, puis la ville, puis le nom de l'entrée pour trouver finalement le numéro de téléphone. En pratique, dans un réseau informatique, il est utilisé pour enregistrer une grande quantité d'utilisateurs ou de services, parfois des centaines de milliers. Il permet d'organiser hiérarchiquement les utilisateurs par département, par lieu géographique ou par n'importe quel autre critère. C'est une alternative libre à Microsoft Active Directory.
+
+
 # INSTALLATION ANNUAIRE LDAP AVEC OPENLDAP  
 
 __apt-get install slapd ldap-utils__  
