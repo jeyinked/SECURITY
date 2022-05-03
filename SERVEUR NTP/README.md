@@ -32,6 +32,6 @@ timedatectl                       #Affiche les informations sur l'heure du syst√
 
 timedatectl list-timezones        #Affiche les fuseaux horaires  
 
-timedatectl list-timezones | grep Paris  
+EX: timedatectl list-timezones | grep Paris  
 
 date MMDDHHmmAA   # change la date et l'heure. 
