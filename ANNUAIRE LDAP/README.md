@@ -18,5 +18,5 @@ Indiquer __oui__ pour déplcer l'ancienne base de donnée.
 
 # VERIFIER LE DIT (Directory Information Tree)
 Avec la commande __ldapsearch -Q -L -Y EXTERNAL -H ldapi:/// -b dc=mon-entreprise,dc=com__  
-Cette commande permet de vérifier le __DIT__ precedament configuré.  
+Cette commande permet de vérifier le __DIT__ précédément configuré.  
 Elle doit afficher le __dn (distinguished name)__ nom distinc qui identifie de manière unique un élément dans le __dit__ et le  __dc (domain component)__ __"dc=mon-entreprise,dc=com".__
