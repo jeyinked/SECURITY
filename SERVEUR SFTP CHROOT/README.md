@@ -11,11 +11,8 @@
           X11Forwarding no  
           
           AllowTcpForwarding no  
-          
           ChrootDirectory /home/sftpenv/  
-          
           ForceCommand internal-sftp  
-          
           PasswordAuthentication yes
           
   
