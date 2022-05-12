@@ -7,7 +7,8 @@
   Dans /etc/ssh/sshd_config  
   ___sshd_config:___  
   116 Subsystem sftp  internal-sftp  
-  Match group nom_du_user
+  
+       Match group nom_du_user
           X11Forwarding no  
           
           AllowTcpForwarding no  
