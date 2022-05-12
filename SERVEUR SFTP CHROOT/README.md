@@ -14,7 +14,8 @@
           AllowTcpForwarding no  
           ChrootDirectory /home/sftpenv/  
           ForceCommand internal-sftp  
-          PasswordAuthentication yes
+          PasswordAuthentication yes  
+  systemctl restart ssh
           
   
   
