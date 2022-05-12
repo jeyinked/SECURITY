@@ -15,7 +15,8 @@
           ChrootDirectory /home/sftpenv/  
           ForceCommand internal-sftp  
           PasswordAuthentication yes  
-  systemctl restart ssh
+  systemctl restart ssh  
+  chmod root:root /home/sftpenv/
           
   
   
