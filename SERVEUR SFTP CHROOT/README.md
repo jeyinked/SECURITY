@@ -8,10 +8,14 @@
   ___sshd_config:___  
   116 Subsystem sftp  internal-sftp  
   Match group nom_du_user
-          X11Forwarding no
-          AllowTcpForwarding no
-          ChrootDirectory /home/sftpenv/
-          ForceCommand internal-sftp
+          X11Forwarding no  
+          
+          AllowTcpForwarding no  
+          
+          ChrootDirectory /home/sftpenv/  
+          
+          ForceCommand internal-sftp  
+          
           PasswordAuthentication yes
           
   
