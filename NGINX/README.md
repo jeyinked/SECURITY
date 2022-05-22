@@ -12,8 +12,8 @@ NGINX est un logiciel libre de serveur Web (ou HTTP) ainsi qu'un proxy inverse √
  
  # INSTALLATION  
 
-apt-get update
-apt-get install curl
+apt-get update  
+apt-get install curl  
 apt-get install nginx  
 systemctl enable nginx  
 Pour v√©rifier l'installation, dans un navigateur indiquer: 127.0.0.1  
