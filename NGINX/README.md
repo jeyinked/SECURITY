@@ -36,12 +36,12 @@ Le Fichier de configuration global se trouve dans /etc/nginx/nginx.conf.
  chown -R www-date /var/www/site.test.tech  
  chmod 755 /var/www/site.test.tech  
  touch /var/www/site.test.tech/index.html  
- <html>  
+" <html>  
  <head></head>  
  <body>  
   <h1> TEST OK  </h1>  
  </body>  
-</html>
+</html>"
  
  
    
