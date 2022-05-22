@@ -19,7 +19,12 @@ systemctl enable nginx
 Pour vérifier l'installation, dans un navigateur indiquer: 127.0.0.1  
 Dans un terminal on peut faire un curl 127.0.0.1 pour vérifier l'installation.
 
-# CONFIGURATION
+# CONFIGURATION  
+
+Dans /var/www/html/index.nginx-debian.html.  
+Les fichiers de configuation de NGINX sont dans /etc/nginx/  
+La configuration du site par default sont dans /etc/nginx/site-enabled/default  
+Dans le fichier on peut voir qu'il indique le port par default 80 et que la racine du site se trouve bien dans /var/www/html
    
    
  
