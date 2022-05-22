@@ -28,7 +28,21 @@ Dans le fichier on peut voir qu'il indique le port par default 80 et que la raci
 Le Fichier de configuration global se trouve dans /etc/nginx/nginx.conf.  
 
  * le dossier /etc/nginx/site-available : on place ici les fichiers de configuration des sites mais ils ne sont pas actifs.
- * le dossier /etc/nginx/site-enabled   : on place ici les fichiers de configuration des sites qu'on a crée dans /site-available, pour l'activer.
-   
+ * le dossier /etc/nginx/site-enabled   : on place ici les fichiers de configuration des sites qu'on a crée dans /site-available, pour l'activer.  
+ 
+ # LE SITE TEST  
+ 
+ cd /var/www/ && mkdir site.test.tech  
+ chown -R www-date /var/www/site.test.tech  
+ chmod 755 /var/www/site.test.tech  
+ touch /var/www/site.test.tech/index.html  
+ <html>  
+ <head></head>  
+ <body>  
+  <h1> TEST OK  </h1>  
+ </body>  
+</html>
+ 
+ 
    
  
