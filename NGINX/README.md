@@ -35,13 +35,9 @@ Le Fichier de configuration global se trouve dans /etc/nginx/nginx.conf.
  cd /var/www/ && mkdir site.test.tech  
  chown -R www-date /var/www/site.test.tech  
  chmod 755 /var/www/site.test.tech  
- touch /var/www/site.test.tech/index.html  
-" <html>  
- <head></head>  
- <body>  
-  <h1> TEST OK  </h1>  
- </body>  
-</html>"
+ touch /var/www/site.test.tech/index.html et y mettre du code html pour le test.  
+ Maintenant crée le fichier de configuration du site dans /etc/nginx/site-available/  
+ cd /etc/nginx/site-available/ && cp -pr default 
  
  
    
