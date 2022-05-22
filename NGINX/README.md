@@ -24,7 +24,11 @@ Dans un terminal on peut faire un curl 127.0.0.1 pour vérifier l'installation.
 Dans /var/www/html/index.nginx-debian.html.  
 Les fichiers de configuation de NGINX sont dans /etc/nginx/  
 La configuration du site par default sont dans /etc/nginx/site-enabled/default  
-Dans le fichier on peut voir qu'il indique le port par default 80 et que la racine du site se trouve bien dans /var/www/html
+Dans le fichier on peut voir qu'il indique le port par default 80 et que la racine du site se trouve bien dans /var/www/html  
+Le Fichier de configuration global se trouve dans /etc/nginx/nginx.conf.  
+
+ * le dossier /etc/nginx/site-available : on place ici les fichiers de configuration des sites mais ils ne sont pas actifs.
+ * le dossier /etc/nginx/site-enabled   : on place ici les fichiers de configuration des sites qu'on a crée dans /site-available, pour l'activer.
    
    
  
