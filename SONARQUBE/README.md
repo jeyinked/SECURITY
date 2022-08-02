@@ -27,7 +27,7 @@ systemctl status postgresql
   psql  
   ALTER USER sonarqube WITH ENCRYPTED password 'le_password';  
   CREATE DATABASE sonarqube OWNER sonarqube;  
-  GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+  GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;  
   \q  
   exit 
   
