@@ -31,6 +31,9 @@ systemctl status postgresql
   \q  
   exit 
   
+# INSTALLATION & CONFIGURATION DE SONARQUBE
+  
+  
   
   
   
