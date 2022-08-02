@@ -46,7 +46,7 @@ systemctl status postgresql
 #sonar.web.host=0.0.0.0  
 
 # AJOUT DU SERVICE DANS SYSTEMD  
-___nano /etc/systemd/system/sonarqube.service___:  
+___nano /etc/systemd/system/sonarqube.service___  
 
 [Unit]  
 Description=SonarQube Service  
@@ -69,7 +69,23 @@ LimitNPROC=4096
 WantedBy=multi-user.target  
 
 
-__nano /opt/sonarqube/bin/linux-x86-64/sonar.sh__:
+RUN_AS_USER=sonarqube
+
+# OUVERTURE DU PORT 9000  
+systemctl daemon-reload  
+systemctl enable sonarqube  
+systemctl start sonarqube  
+systemctl status sonarqube  
+
+
+ufw allow OpenSSH  
+ufw allow 9000/tcp  
+ufw enable
+
+
+
+
+
   
   
   
