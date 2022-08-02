@@ -22,8 +22,8 @@ systemctl status postgresql
 
 # CREATION DE LA BDD SONARQUBE  
   passwd postgres  
-  su -\ postgres 
-  createuser sonarqube
+  su -\ postgres  
+  createuser sonarqube  
   psql  
   ALTER USER sonarqube WITH ENCRYPTED password 'le_password';  
   CREATE DATABASE sonarqube OWNER sonarqube;  
