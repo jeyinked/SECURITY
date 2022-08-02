@@ -96,7 +96,7 @@ proxy_pass  http://127.0.0.1:9000;
 }  
 }  
 
-ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf  
+__ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf__  
 ufw allow 80/tcp  
 service nginx configtest  
 systemctl restart nginx  
@@ -110,7 +110,7 @@ fs.file-max=65536
 ulimit -n 65536  
 ulimit -u 4096  
 
-sysctl --system
+__sysctl --system__
 
 # ACCEDER A SONARQUBE  
 
@@ -137,7 +137,7 @@ __nano /etc/profile.d/sonar-scanner.sh__ (ajouter)
 #/bin/bash  
 export PATH="$PATH:/opt/sonar-scanner/bin"  
 
-source /etc/profile.d/sonar-scanner.sh  
+__source /etc/profile.d/sonar-scanner.sh__  
 env | grep PATH  
 sonar-scanner -v
 
