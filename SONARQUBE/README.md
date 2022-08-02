@@ -6,4 +6,33 @@ SonarQube (précédemment Sonar) est un logiciel libre de qualimétrie en contin
 SonarQube permet une surveillance continue de la qualité du code grâce à son interface web permettant de voir les défauts de l'ensemble du code et ceux ajoutés par la nouvelle version. Le logiciel peut être interfacé avec un système d'automatisation comme Jenkins pour inclure l'analyse comme une extension du développement.
 
 
-# INSTALLATION
+# INSTALLATION DES DEPENDANCES 
+  apt-get update && apt-get upgrade -y  
+  apt install wget unzip curl gnupg2 ca-certificates lsb-release socat -y  
+  apt-get install openjdk-11-jre -y  
+  
+# INSTALLATION DE POSTGRE  
+  passwd postgres  
+  su -\ postgres 
+  createuser sonarqube
+  psql  
+  ALTER USER sonarqube WITH ENCRYPTED password 'le_password';  
+  CREATE DATABASE sonarqube OWNER sonarqube;  
+  GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+  \q  
+  exit
+  
+  # CREATION DE LA BDD SONARQUBE  
+  passwd postgres  
+  su -\ postgres 
+  createuser sonarqube
+  psql  
+  ALTER USER sonarqube WITH ENCRYPTED password 'le_password';  
+  CREATE DATABASE sonarqube OWNER sonarqube;  
+  GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
+  \q  
+  exit 
+  
+  
+  
+  
