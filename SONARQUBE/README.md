@@ -12,17 +12,15 @@ SonarQube permet une surveillance continue de la qualité du code grâce à son 
   apt-get install openjdk-11-jre -y  
   
 # INSTALLATION DE POSTGRE  
-  passwd postgres  
-  su -\ postgres 
-  createuser sonarqube
-  psql  
-  ALTER USER sonarqube WITH ENCRYPTED password 'le_password';  
-  CREATE DATABASE sonarqube OWNER sonarqube;  
-  GRANT ALL PRIVILEGES ON DATABASE sonarqube to sonarqube;
-  \q  
-  exit
-  
-  # CREATION DE LA BDD SONARQUBE  
+sh -c 'echo "deb http://apt.postgresql.org/pub/repos/apt/ `lsb_release -cs`-pgdg main" >> /etc/apt/sources.list.d/pgdg.list'  
+wget -q https://www.postgresql.org/media/keys/ACCC4CF8.asc -O - | sudo apt-key add -  
+apt update 
+apt-get install postgresql postgresql-contrib -y  
+systemctl enable postgresql  
+systemctl start postgresql  
+systemctl status postgresql
+
+# CREATION DE LA BDD SONARQUBE  
   passwd postgres  
   su -\ postgres 
   createuser sonarqube
