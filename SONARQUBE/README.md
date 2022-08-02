@@ -43,7 +43,30 @@ systemctl status postgresql
 #sonar.jdbc.username=sonarqube  
 #sonar.jdbc.password=le_password  
 #sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube  
-#sonar.web.host=0.0.0.0
+#sonar.web.host=0.0.0.0  
+
+# AJOUT DU SERVICE DANS SYSTEMD  
+___nano /etc/systemd/system/sonarqube.service___:  
+
+[Unit]  
+Description=SonarQube Service  
+After=syslog.target network.target
+
+[Service]  
+Type=forking  
+
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start  
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop  
+
+User=sonarqube
+Group=sonarqube  
+Restart=always  
+
+LimitNOFILE=65536  
+LimitNPROC=4096  
+
+[Install]  
+WantedBy=multi-user.target
  
   
   
