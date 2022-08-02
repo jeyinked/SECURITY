@@ -41,7 +41,7 @@ systemctl status postgresql
  
  ___nano /opt/sonarqube/conf/sonar.properties___:  
 #sonar.jdbc.username=sonarqube  
-#sonar.jdbc.password=SecurePassword  
+#sonar.jdbc.password=le_password
 #sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube  
 #sonar.web.host=0.0.0.0
  
