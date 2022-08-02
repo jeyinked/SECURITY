@@ -66,8 +66,10 @@ LimitNOFILE=65536
 LimitNPROC=4096  
 
 [Install]  
-WantedBy=multi-user.target
- 
+WantedBy=multi-user.target  
+
+
+__nano /opt/sonarqube/bin/linux-x86-64/sonar.sh__:
   
   
   
