@@ -88,9 +88,13 @@ systemctl enable nginx
 unlink /etc/nginx/sites-enabled/default  
 __nano /etc/nginx/sites-available/sonarqube.conf__  
 
-
-
-
+server {  
+listen 80;  
+server_name  example.com;  
+location / {  
+proxy_pass  http://127.0.0.1:9000;  
+}  
+}
 
 
 
