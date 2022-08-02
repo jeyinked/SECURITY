@@ -82,11 +82,18 @@ ufw allow OpenSSH
 ufw allow 9000/tcp  
 ufw enable
 
+# INSTALLATION ET CONFIGURATION DE NGINX  
+apt-get install nginx -y  
+systemctl enable nginx  
+unlink /etc/nginx/sites-enabled/default  
+__nano /etc/nginx/sites-available/sonarqube.conf__  
 
 
 
 
-  
+
+
+
   
   
   
