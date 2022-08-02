@@ -89,12 +89,40 @@ unlink /etc/nginx/sites-enabled/default
 __nano /etc/nginx/sites-available/sonarqube.conf__  
 
 server {  
-listen 80;  
+    listen 80;  
 server_name  example.com;  
 location / {  
 proxy_pass  http://127.0.0.1:9000;  
 }  
-}
+}  
+
+ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf  
+ufw allow 80/tcp  
+service nginx configtest  
+systemctl restart nginx  
+
+sudo sysctl --system
+
+__nano /etc/sysctl.conf__  (ajouter)  
+
+vm.max_map_count=262144  
+fs.file-max=65536  
+ulimit -n 65536  
+ulimit -u 4096  
+
+sysctl --system
+
+# ACCEDER A SONARQUBE  
+
+http://ip_du_serveur  
+id & mdp par default: admin admin 
+
+
+
+
+
+
+
 
 
 
