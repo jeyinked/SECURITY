@@ -31,7 +31,22 @@ systemctl status postgresql
   \q  
   exit 
   
-# INSTALLATION & CONFIGURATION DE SONARQUBE
+# INSTALLATION & CONFIGURATION DE SONARQUBE  
+  wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.2.2.50622.zip  
+  unzip sonarqube-9.2.2.50622.zip  
+  mkdir /opt/sonarqube  
+  mv sonarqube-*/* /opt/sonarqube  
+  useradd -M -d /opt/sonarqube/ -r -s /bin/bash sonarqube   
+  chown -R sonarqube:sonarqube -R /opt/sonarqube  
+ 
+ ___nano /opt/sonarqube/conf/sonar.properties___:  
+#sonar.jdbc.username=sonarqube  
+#sonar.jdbc.password=SecurePassword  
+#sonar.jdbc.url=jdbc:postgresql://localhost:5432/sonarqube  
+#sonar.web.host=0.0.0.0
+ 
+  
+  
   
   
   
