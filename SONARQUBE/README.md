@@ -69,8 +69,9 @@ LimitNPROC=4096
 [Install]  
 WantedBy=multi-user.target  
 
+__nano /opt/sonarqube/bin/linux-x86-64/sonar.sh__  
+RUN_AS_USER=sonarqube  
 
-RUN_AS_USER=sonarqube
 
 # OUVERTURE DU PORT 9000  
 systemctl daemon-reload  
@@ -97,12 +98,11 @@ proxy_pass  http://127.0.0.1:9000;
 }  
 }  
 
-__ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf__  
+ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf 
 ufw allow 80/tcp  
 service nginx configtest  
 systemctl restart nginx  
-
-sudo sysctl --system
+sysctl --system
 
 __nano /etc/sysctl.conf__  (ajouter)  
 
