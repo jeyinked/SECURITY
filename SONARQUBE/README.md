@@ -34,8 +34,9 @@ systemctl status postgresql
 # INSTALLATION & CONFIGURATION DE SONARQUBE  
   wget https://binaries.sonarsource.com/Distribution/sonarqube/sonarqube-9.2.2.50622.zip  
   unzip sonarqube-9.2.2.50622.zip  
-  mkdir /opt/sonarqube  
-  mv sonarqube- * / * /opt/sonarqube  
+  mkdir /opt/sonarqube 
+  rm -rf sonarqube*.zip
+  mv sonarqube* / * /opt/sonarqube  
   useradd -M -d /opt/sonarqube/ -r -s /bin/bash sonarqube   
   chown -R sonarqube:sonarqube -R /opt/sonarqube  
  
