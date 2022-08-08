@@ -48,25 +48,24 @@ systemctl status postgresql
 
 # AJOUT DU SERVICE DANS SYSTEMD  
 ___nano /etc/systemd/system/sonarqube.service___  
+[Unit]  
+Description=SonarQube Service  
+After=syslog.target network.target  
 
- [Unit]
-Description=SonarQube Service
-After=syslog.target network.target
+[Service]  
+Type=forking  
 
-[Service]
-Type=forking
+ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start  
+ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop  
 
-ExecStart=/opt/sonarqube/bin/linux-x86-64/sonar.sh start
-ExecStop=/opt/sonarqube/bin/linux-x86-64/sonar.sh stop
+User=sonarqube  
+Group=sonarqube  
+Restart=always  
 
-User=sonarqube
-Group=sonarqube
-Restart=always
+LimitNOFILE=65536  
+LimitNPROC=4096  
 
-LimitNOFILE=65536
-LimitNPROC=4096
-
-[Install]
+[Install]  
 WantedBy=multi-user.target
 
 __nano /opt/sonarqube/bin/linux-x86-64/sonar.sh__  
