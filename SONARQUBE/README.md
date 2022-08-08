@@ -97,7 +97,7 @@ proxy_pass  http://127.0.0.1:9000;
 }  
 }  
 
-ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf 
+ln -s /etc/nginx/sites-available/sonarqube.conf /etc/nginx/sites-enabled/sonarqube.conf  
 ufw allow 80/tcp  
 service nginx configtest  
 systemctl restart nginx  
