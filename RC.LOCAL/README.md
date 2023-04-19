@@ -3,8 +3,11 @@
 
 __RC.LOCAL__  
   
-  Dans /etc/rc.local   
+  Dans /etc/rc.local  
   
+  Voir le fichier en pj.
+  
+  Ne pas oublier de reboot le service en question, systemctl restart rc-local.service
   
   
   
