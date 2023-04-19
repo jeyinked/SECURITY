@@ -1,1 +1,4 @@
 
+# LOGS CUSTOM
+
+__RSYSLOG.D__  
