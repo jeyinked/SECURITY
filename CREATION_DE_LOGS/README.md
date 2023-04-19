@@ -3,4 +3,5 @@
 
 __RSYSLOG.D__  
 
-  Dans /etc/rsyslod.d/ editer des fichiers ".conf"
+  Dans /etc/rsyslod.d/ editer des fichiers ".conf"  
+  Exemple dans les fichiers en PJ, concernant l'accès au serveur.
